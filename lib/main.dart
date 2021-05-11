@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 import 'two_player_game.dart';
+void main(List<String> args) {
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(),
+      theme:ThemeData(primaryColor: Colors.red),
+    );
+  }
+}
 class HomePage extends StatelessWidget {
   @override
     Widget build(BuildContext context) {
@@ -10,7 +22,7 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Row(children: [],),
+            // Row(children: [],),
             // Row(
             //   mainAxisAlignment: MainAxisAlignment.center,
             //   children: <Widget>[
